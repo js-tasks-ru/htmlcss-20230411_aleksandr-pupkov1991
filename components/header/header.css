@@ -1,0 +1,14 @@
+.header{
+    min-height: 237px;
+    background-color: #fff;
+}
+
+.header__title{
+    margin: 0;
+    padding: 96px 0 0 160px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    color: #212429;
+}
