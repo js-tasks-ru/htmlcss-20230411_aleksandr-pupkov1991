@@ -1,66 +1,42 @@
 /* Стилизация кнопки */
-.wrapper{
-    text-align: center;
-    margin-top: 50px;
-}
 .btn{
-    width: 198px;
-    height: 48px;
     border-radius: 8px;
     border: none;
+    padding: 15px 66px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
 }
-.btn__primary{
+.btn:hover{
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.btn_primary{
     background-color: var(--primary);
-    color: var(--white);
-    cursor: pointer;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
 }
-.btn__primary:hover{
+.btn_primary:hover{
     background-color: #2342C0;
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+
 }
-.btn__primary:disabled{
-    cursor: default;
-    opacity: 0.5;
-}
-.btn__secondary{
+.btn_secondary{
     background-color: var(--secondary);
-    color: var(--white);
-    cursor: pointer;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
 }
-.btn__secondary:hover{
+.btn_secondary:hover{
     background-color: #5028C6;
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
-.btn__secondary:disabled{
-    cursor: default;
-    opacity: 0.5;
-}
-.btn__alternate{
+.btn_alternate{
     background-color: transparent;
     border: 1px solid var(--grey-3);
     color: var(--grey-4);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
 }
-.btn__alternate:hover{
+.btn_alternate:hover{
     border: 1px solid var(--black);
-    transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
 }
-.btn__alternate:disabled{
+.btn:disabled{
     cursor: default;
     opacity: 0.5;
+    pointer-events: none;
 }
